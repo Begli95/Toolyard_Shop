@@ -1,13 +1,12 @@
 package com.toolyard.toolyard_shop.model;
 
-import jakarta.persistence.*;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 
+import javax.persistence.*;
 import java.util.List;
 
 @Data
@@ -22,7 +21,7 @@ public class Bucket {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = SEQ_NAME)
     @SequenceGenerator(name = SEQ_NAME, sequenceName = SEQ_NAME, allocationSize = 1)
-    private long id;
+    private Long id;
     @OneToOne
     @JoinColumn(name = "user_id")
     private User user;

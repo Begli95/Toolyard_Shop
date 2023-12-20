@@ -1,15 +1,14 @@
 package com.toolyard.toolyard_shop.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Embeddable;
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
 
 @Embeddable
 public class DocumentationMetadata {
     @Column(name = "storage_object_id")
-    private String storageObjectId; // Идентификатор файла в Yandex Object Storage
-
+    private String storageObjectId;
     @Column(name = "storage_path")
-    private String storagePath; // Путь к файлу в бакете
+    private String storagePath;
     @Column(name = "original_file_name")
     private String originalFileName;
     @Column(name = "file_size")

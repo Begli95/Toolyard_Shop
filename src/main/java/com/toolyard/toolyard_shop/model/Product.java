@@ -1,12 +1,11 @@
 package com.toolyard.toolyard_shop.model;
 
-
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.List;
 
@@ -22,7 +21,7 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = SEQ_NAME)
     @SequenceGenerator(name = SEQ_NAME, sequenceName = SEQ_NAME, allocationSize = 1)
-    private long id;
+    private Long id;
     @Column(length = 500)
     private String title;
     private BigDecimal price;
@@ -37,7 +36,7 @@ public class Product {
     @ElementCollection
     @CollectionTable(name = "product_documentation", joinColumns = @JoinColumn(name = "product_id"))
     private List<DocumentationMetadata> documentationMetadata;
-    private int amount;
+    private Integer amount;
 
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "products_categories",
