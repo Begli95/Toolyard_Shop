@@ -59,6 +59,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                     .formLogin()
                     .loginPage("/login")
+                    .failureUrl("/login-error")
                     .loginProcessingUrl("/auth")
                     .permitAll()
                 .and()
@@ -67,6 +68,5 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .invalidateHttpSession(true)
                 .and()
                     .csrf().disable();
-
     }
 }
