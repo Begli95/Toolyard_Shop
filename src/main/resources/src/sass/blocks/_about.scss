@@ -1,0 +1,32 @@
+.about {
+    margin-top: 90px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+    }
+    &__descr {
+        padding-left: 56px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: $light_color;
+        border-radius: $br10px;
+        row-gap: 20px;
+        &-title {
+            color: $main_color;
+            font-family: $golos;
+            font-size: 70px;
+            font-weight: 700;
+            line-height: 70px;
+            margin-top: 10px;
+        }
+        &-text{
+            color: #201F1D;
+            font-family:$golos;
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+    }
+}

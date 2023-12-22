@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Helvetica';
+    font-weight: 300;
+    src: url('../fonts/helvetica/helvetica-light-587ebe5a59211.woff');
+    src: url('../fonts/helvetica/helvetica-light-587ebe5a59211.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    font-weight: 400;
+    src: url('../fonts/helvetica/Helvetica.woff');
+    src: url('../fonts/helvetica/Helvetica.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    font-weight: 700;
+    src: url('../fonts/helvetica/Helvetica-Bold.woff');
+    src: url('../fonts/helvetica/Helvetica-Bold.woff') format('woff');
+}
+
+
+
+@font-face {
+    font-family: 'Golos Text';
+    font-weight: 500;
+    src: url('../fonts/golos/static/GolosText-Medium.ttf');
+    src: url('../fonts/golos/static/GolosText-Medium.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Golos Text';
+    font-weight: 700;
+    src: url('../fonts/golos/static/GolosText-Bold.ttf');
+    src: url('../fonts/golos/static/GolosText-Bold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Golos Text';
+    font-weight: 400;
+    src: url('../fonts/golos/static/GolosText-Regular.ttf');
+    src: url('../fonts/golos/static/GolosText-Regular.ttf') format('ttf');
+}
+

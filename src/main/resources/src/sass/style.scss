@@ -1,0 +1,37 @@
+@import 'libs/bootstrap-reboot.min';
+/* @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;700;800&display=swap'); */
+
+
+@import 'base/variables';
+@import 'base/mixins';
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $bg_color-dark;
+}
+
+.container {
+    width: 1290px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+@import 'blocks/promo.scss';
+@import 'blocks/title.scss';
+@import 'blocks/button.scss';
+@import 'blocks/header.scss';
+@import 'blocks/catalog.scss';
+@import 'blocks/instructions.scss';
+@import 'blocks/sale.scss';
+@import 'blocks/about.scss';
+@import 'blocks/forms.scss';
+@import 'blocks/footer.scss';

@@ -1,0 +1,89 @@
+.forms {
+    margin-top: 90px;
+    &__body {
+        padding-top: 42px;
+        padding-bottom: 52px;
+        width: 890px;
+        margin: 0 auto;
+        background: url(../img/forms/bg.png) no-repeat;
+        &-title {
+            font-size: 32px;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        &-subtitle {
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+        }
+        &-wrapper {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            label {
+                color: $light_color;
+                font-family: $golos;
+                font-size: 16px;
+                font-weight: 700;
+                width: 600px;
+                text-align: start;
+                margin: 20px auto 0 auto;
+            }
+            
+            input {
+                width: 600px;
+                margin: 0 auto;
+                border-radius: 26px;
+                background: $light_color;
+                padding: 10px 15px;
+                outline: none;
+                border: none;
+                &:focus {
+                    outline: none;
+                }
+            }
+            textarea {
+                width: 600px;
+                margin: 0 auto;
+                border-radius: 10px;
+                background: $light_color;
+                padding: 10px 15px;
+                outline: none;
+                &:focus {
+                    outline: none;
+                }
+            }
+            
+        }
+        &-checkbox {
+            display: grid;
+            grid-template-columns: 20px auto;
+            width: 600px;
+            margin: 18px auto 0 auto;
+            column-gap: 10px;
+            input {
+                width: 20px;
+                cursor: pointer;
+            }
+            label {
+                font-size: 10px;
+                font-weight: 400;
+                margin-top: 0px;
+            }
+        }
+        &-btn {
+            width: 300px;
+            height: 40px;
+            margin: 40px auto 0 auto;
+            border-radius: 100px;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+    }
+    
+}
+

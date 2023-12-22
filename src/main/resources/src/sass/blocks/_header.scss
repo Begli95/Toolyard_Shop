@@ -1,0 +1,123 @@
+.header {
+    margin-top: 50px;
+    &__btn {
+        
+        &-entrance {
+            width: 110px;
+            padding: 10px;
+            
+        }
+        &-basket {
+            width: 42px;
+            padding: 10px;
+        }
+        
+        &-heart {
+            width: 42px;
+            padding: 10px;
+        }
+    }
+    &__menu {
+        padding: 15px 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #010101;
+        border-radius: $br10px;
+        &__items {
+            &-wrapper  {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            span {
+                color: #BFBFBF;
+                font-size: 9px;
+                font-weight: 400;
+                font-family: $golos;
+            }
+            &-phone {
+                font-size: 24px;
+                font-weight: 400;
+                color: $light_color;
+                font-family: $golos;
+                &:hover {
+                    color: $light_color;
+                }
+            }
+            
+
+            &-search {
+                position: relative;
+            }
+            &-input {
+                padding: 10px;
+                height: 42px;
+                width: 200px;
+                border-radius: $br10px;
+                border: 0.5px solid $main_color;
+                background: $bg_color-dark;
+                font-family: $golos;
+                font-size: 18px;
+                color: $light_color;
+                outline: none;
+                &:focus {
+                    border: 0.5px solid $main_color;
+                }
+                &:hover {
+                    border: 0.5px solid $main_color;
+                }
+            }
+            &-magnifier {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                height: 100%;
+                border: 0.5px solid $main_color;
+                border-radius: $br10px;
+                width: 40px;
+                cursor: pointer;
+                img {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                }
+
+            }
+            
+
+            &-social {
+                display: flex;
+                justify-content: space-between;
+                width: 150px;
+                img {
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+
+            &-buttons {
+                display: flex;
+                justify-content: space-between;
+                width: 225px;
+            }
+            
+        }
+        
+        
+    }
+
+    &__list {
+        margin-top: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        &-item {
+            background: #010101;
+            font-size: 22px;
+            padding: 5px 22px;
+        }
+    }
+
+}

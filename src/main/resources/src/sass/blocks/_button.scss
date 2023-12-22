@@ -1,0 +1,17 @@
+.btn {
+    border-radius: $br10px;
+    background: $main_color;
+    color: $light_color;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-family: $golos;
+    font-size: 18px;
+    &:hover {
+        box-shadow: 5px 1px 20px $main_color;
+    }
+    &:focus {
+        border: none;
+        outline: none;
+    }
+}

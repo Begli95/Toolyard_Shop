@@ -1,0 +1,26 @@
+.instructions {
+    margin-top: 90px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 300px;
+        column-gap: 30px;
+
+    }
+    &__item {
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        height: 300px;
+        
+    }
+    &__item_1 {
+        background: url(../img/instructions/bg1.png) no-repeat ;
+    }
+    &__item_2 {
+        background: url(../img/instructions/bg2.png) no-repeat;
+    }
+    &__item_3 {
+        background: url(../img/instructions/bg3.png) no-repeat;
+    }
+}
