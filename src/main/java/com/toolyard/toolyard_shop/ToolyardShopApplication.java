@@ -7,12 +7,11 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 @SpringBootApplication
 public class ToolyardShopApplication {
-	//13.58
+	//53.19
 	public static void main(String[] args) {
 		//SpringApplication.run(ToolyardShopApplication.class, args);
 		ConfigurableApplicationContext context = SpringApplication.run(ToolyardShopApplication.class, args);
 		PasswordEncoder encoder = context.getBean(PasswordEncoder.class);
 		System.out.println(encoder.encode("pass"));
 	}
-
 }
